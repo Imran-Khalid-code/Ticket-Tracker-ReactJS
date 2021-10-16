@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
 import styles from './App.module.scss'
-import team from './data/team'
 import EmployeeCard from './components/EmployeeCard'
+import NavBar from './components/NavBar'
+import team from './data/team'
 
 const App = () => {
 	return (
 		<>
-			<h1 className={styles.heading}>Ticket Tracker</h1>
+			{/* <h1 className={styles.heading}>Ticket Tracker</h1> */}
 
-			<div>
-				<EmployeeCard />
-			</div>
+			<section className={styles.nav}>
+				<NavBar />
+			</section>
+			<section className={styles.content}>
+				<EmployeeCard person={team[1]} />
+				{/* <EmployeeCard person={team[2]} /> */}
+			</section>
 		</>
 	)
 }

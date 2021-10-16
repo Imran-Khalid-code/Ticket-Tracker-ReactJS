@@ -1,15 +1,18 @@
 import React from 'react'
 import styles from './EmployeeCard.module.scss'
 
-const EmployeeCard = () => {
+const EmployeeCard = (props) => {
+	//object destructuring:
+	const { name, role } = props.person
+
 	return (
 		<div className={styles.employeeCard}>
 			<section className={styles.employeeCard}>
 				<h3>
-					<span>Name</span>: Alima Miller
+					<span>Name</span>: {name}
 				</h3>
 				<h3>
-					<span>Role</span>: Junior Software Developer
+					<span>Role</span>: {role}
 				</h3>
 			</section>
 			<div className={styles.employeeCard}>
