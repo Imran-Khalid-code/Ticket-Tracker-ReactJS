@@ -5,6 +5,12 @@ import NavBar from './components/NavBar'
 import team from './data/team'
 
 const App = () => {
+	// console.log(team)
+
+	const getEmployeeCardJsx = (teams) => (
+		<EmployeeCard person={teams} key={teams.id} />
+	)
+
 	return (
 		<>
 			{/* <h1 className={styles.heading}>Ticket Tracker</h1> */}
@@ -13,7 +19,8 @@ const App = () => {
 				<NavBar />
 			</section>
 			<section className={styles.content}>
-				<EmployeeCard person={team[1]} />
+				{/* <EmployeeCard person={team[1]} /> */}
+				{team.map(getEmployeeCardJsx)}
 				{/* <EmployeeCard person={team[2]} /> */}
 			</section>
 		</>

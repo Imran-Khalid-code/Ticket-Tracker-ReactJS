@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './EmployeeCard.module.scss'
 
 const EmployeeCard = (props) => {
 	//object destructuring:
 	const { name, role } = props.person
+	const [count, setCount] = useState(1)
 
 	return (
 		<div className={styles.employeeCard}>
@@ -16,10 +17,21 @@ const EmployeeCard = (props) => {
 				</h3>
 			</section>
 			<div className={styles.employeeCard}>
-				<h3>Counter</h3>
-				<div className={styles.recordProfile}>0</div>
-				<div className={styles.counterProfile}>-</div>
-				<div className={styles.counterProfile}>+</div>
+				<h3>Count</h3>
+
+				<div className={styles.recordProfile}>{count}</div>
+				<div
+					className={styles.counterProfile}
+					onClick={() => setCount(count - 1)}
+				>
+					-
+				</div>
+				<div
+					className={styles.counterProfile}
+					onClick={() => setCount(count + 1)}
+				>
+					+
+				</div>
 			</div>
 		</div>
 	)
