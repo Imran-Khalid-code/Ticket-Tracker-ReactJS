@@ -15,11 +15,7 @@
 	margin: 20px;
 	font-size: 12px;
 	text-align: center;
-	background-color:#F1F8E9;
-	
-	
-
-
+	background-color: #f1f8e9;
 }
 .recordProfile {
 	height: 40%;
@@ -32,10 +28,9 @@
 	padding-top: $base-spacing * 2;
 	font-size: 20px;
 	font-weight: bold;
-	
 
 	&:hover {
-		color: white;
+		color: black;
 	}
 }
 
@@ -51,11 +46,9 @@
 	font-size: 20px;
 	font-weight: bold;
 	display: inline;
-	
-	
 
 	&:hover {
-		color: white;
+		color: black;
 	}
 }
 
@@ -69,11 +62,10 @@ h3 {
 	text-overflow: ellipsis;
 
 	&:hover {
-		color: white;
+		color: black;
 	}
 }
 
-
 .counter {
-	background-color: #E3F2FD;
+	background-color: #e3f2fd;
 }
