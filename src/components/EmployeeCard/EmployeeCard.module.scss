@@ -15,12 +15,11 @@
 	margin: 20px;
 	font-size: 12px;
 	text-align: center;
-	background-color: #991;
+	background-color:#F1F8E9;
+	
+	
 
-	// @media screen and (max-width: 500px) {
-	// 	width: 100px;
-	// 	height: 140px;
-	// }
+
 }
 .recordProfile {
 	height: 40%;
@@ -33,6 +32,7 @@
 	padding-top: $base-spacing * 2;
 	font-size: 20px;
 	font-weight: bold;
+	
 
 	&:hover {
 		color: white;
@@ -51,6 +51,8 @@
 	font-size: 20px;
 	font-weight: bold;
 	display: inline;
+	
+	
 
 	&:hover {
 		color: white;
@@ -69,4 +71,9 @@ h3 {
 	&:hover {
 		color: white;
 	}
+}
+
+
+.counter {
+	background-color: #E3F2FD;
 }

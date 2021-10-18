@@ -8,7 +8,7 @@ const EmployeeCard = (props) => {
 
 	return (
 		<div className={styles.employeeCard}>
-			<section className={styles.employeeCard}>
+			<section className={`${styles.employeeCard} ${styles.counter}`}>
 				<h3>
 					<span>Name</span>: {name}
 				</h3>
@@ -16,13 +16,13 @@ const EmployeeCard = (props) => {
 					<span>Role</span>: {role}
 				</h3>
 			</section>
-			<div className={styles.employeeCard}>
+			<div className={`${styles.employeeCard} ${styles.counter}`}>
 				<h3>Count</h3>
 
 				<div className={styles.recordProfile}>{count}</div>
 				<div
 					className={styles.counterProfile}
-					onClick={() => setCount(count - 1)}
+					onClick={() => count > 0 ?setCount(count - 1): ""}
 				>
 					-
 				</div>
